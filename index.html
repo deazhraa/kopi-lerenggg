@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kopi Lereng: kopi arabika lereng gunung, diseduh segar setiap hari.">
+<title>Beranda | Kopi Lereng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&amp;family=Instrument+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Kopi Lereng</a>
+    <nav class="nav" id="nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html" aria-current="page">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Ganti tema terang atau gelap">Tema</button>
+      <button class="icon-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </div>
+</header>
+<main>
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <h1>Kopi dari lereng, diseduh di meja Anda.</h1>
+      <p>Kopi Lereng menyangrai biji arabika dari petani lereng gunung setiap pekan. Pilih menu favorit, lalu tambahkan ke daftar pesanan.</p>
+      <p><a class="btn" href="#menu">Lihat menu</a><a class="btn ghost" href="tentang.html">Kenali kami</a></p>
+    </div>
+    <img class="hero-art" src="img/kopi.jpg" alt="Secangkir kopi hangat dengan biji kopi di sekitarnya" width="800" height="800">
+  </header>
+
+  <div class="stats" aria-label="Fakta singkat">
+    <div><strong>12</strong><span>petani mitra</span></div>
+    <div><strong>7</strong><span>menu pilihan</span></div>
+    <div><strong>1.500</strong><span>mdpl, ketinggian kebun</span></div>
+  </div>
+
+  <section id="menu" aria-labelledby="judul-menu">
+    <h2 id="judul-menu">Menu <span class="cart-badge" id="cart-count" aria-live="polite">0</span></h2>
+    <p class="lead">Pilih kategori, lalu tekan "Tambah" untuk memasukkan menu ke pesanan.</p>
+    <div class="filters" role="group" aria-label="Filter kategori">
+      <button class="chip" type="button" data-filter="semua" aria-pressed="true">Semua</button>
+      <button class="chip" type="button" data-filter="kopi" aria-pressed="false">Kopi</button>
+      <button class="chip" type="button" data-filter="non-kopi" aria-pressed="false">Non-kopi</button>
+      <button class="chip" type="button" data-filter="camilan" aria-pressed="false">Camilan</button>
+    </div>
+    <p class="status" id="status"></p>
+    <div class="menu-grid" id="menu-grid"></div>
+    <div class="order">
+      <h3>Ringkasan pesanan</h3>
+      <p class="status" id="order-empty">Belum ada menu dipilih.</p>
+      <ul id="order-list"></ul>
+      <p><strong>Total: <span id="cart-total">Rp 0</span></strong></p>
+      <button class="btn" id="order-btn" type="button" disabled>Pesan via WhatsApp</button>
+    </div>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap"><p>&copy; 2026 Kopi Lereng. Tugas UTS Pemrograman Web.</p></div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
