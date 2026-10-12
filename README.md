@@ -2,8 +2,8 @@
 
 Tugas UTS Pemrograman Web, Sarjana Terapan Manajemen Informatika, Semester 3.
 
-- **Nama / NIM:** (isi nama dan NIM Anda)
-- **Alamat website:** https://USERNAME.github.io/NAMA-REPO/ (ganti dengan alamat GitHub Pages Anda)
+- **Nama / NIM: Ella Dea Azahra / 25091397098
+- **Alamat website: https://github.com/deazhraa/kopi-lereng
 - **Dokumen SRS:** [SRS.md](SRS.md)
 
 ## Cara melihat halaman
